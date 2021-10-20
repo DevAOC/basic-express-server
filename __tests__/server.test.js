@@ -14,6 +14,17 @@ describe('Testing routes', () => {
     const res = await req.get('/person?name=fred');
 
     expect(res.status).toBe(200);
-    // expect(res.).toBe();
+  });
+
+  it('Should throw an error when a different method is called', async () => {
+    const res = await req.get('/badpath');
+
+    expect(res.status).toBe(404);
+  });
+
+  it('Should throw an error when a different method is called', async () => {
+    const res = await req.put('/person');
+
+    expect(res.status).toBe(404);
   });
 });
