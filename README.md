@@ -8,9 +8,9 @@ Antoine Charette
 
 ## Links to Application Deployment
 
-[Heroku]()
+[Heroku](https://code401-basic-express-server.herokuapp.com/)
 
-[Actions Page]()
+[Actions Page](https://github.com/DevAOC/basic-express-server/actions/new)
 
 [PR](https://github.com/DevAOC/basic-express-server/pull/1)
 
