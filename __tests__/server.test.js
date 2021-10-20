@@ -1,6 +1,6 @@
 'use strict';
 
-const app = require('../app.js');
+const server = require('../lib/server.js');
 const supertest = require('supertest');
 
 const req = supertest(server.server);

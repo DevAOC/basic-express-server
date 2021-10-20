@@ -15,7 +15,7 @@ describe('Testing the logging middleware', () => {
     req.method = 'PUT';
     logger(req, res, next);
 
-    expect(next).toHaveBeenCalledWith(error);
+    expect(next).toHaveBeenCalled();
     expect(res.status).toBe(404);
   });
 });
