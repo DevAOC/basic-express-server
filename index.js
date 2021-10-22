@@ -1,6 +1,6 @@
 'use strict';
 
-const { database } = require('./lib/model');
+const { database } = require('./lib/models');
 const server = require('./server/lib/server.js');
 require('dotenv').config();
 
