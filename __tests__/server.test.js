@@ -10,17 +10,10 @@ describe('Testing routes', () => {
     const res = await req.get('/badroute');
     expect(res.status).toBe(404);
   });
-  it('Should pass with code 200 when query includes name', async () => {
-    const res = await req.get('/person?name=fred');
-
-    expect(res.status).toBe(200);
-  });
 
   it('Should throw an error when the PATCH method is called', async () => {
-    const res = await req.patch('/person');
+    const res = await req.patch('/');
 
-    expect(res.status).toBe(404);
+    expect(res.status).toBe(500);
   });
 });
-
-// Need to change/add tests for all the routes of both tables
